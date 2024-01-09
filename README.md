@@ -1,4 +1,4 @@
-# jsontest
+# jsonvue-mobile demo项目
 
 ## Project setup
 ```
