@@ -15,7 +15,8 @@
     "rollup-plugin-copy": "^3.5.0",
     "vant": "2.11.0",
     "vee-validate": "3.4.15",
-    "vue": "2.6.12"
+    "vue": "2.6.12",
+    "vue-router": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",

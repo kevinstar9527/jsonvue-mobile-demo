@@ -97,3 +97,42 @@ Mock.mock("/dict/remoteSearch","get",{
         },
     ]
 })
+
+
+//ChainDemo mock
+
+Mock.mock('/chain/dict/demo2','post',(options)=>{
+    const { type } = JSON.parse(options.body)
+    if (type === 'english') {
+        return Mock.mock({
+            list:[
+                {
+                    name:'英语四级',
+                    id:'4'
+                }
+            ]
+        })
+    } else if (type === 'french') {
+        return Mock.mock({
+            list:[
+                {
+                    name:'法语四级',
+                    id:'f4'
+                }
+            ]
+        })
+    } else {
+        return Mock.mock({
+            list:[
+                {
+                    name:'英语四级',
+                    id:'4'
+                },
+                {
+                    name:'法语四级',
+                    id:'f4'
+                }
+            ]
+        })
+    }
+})
