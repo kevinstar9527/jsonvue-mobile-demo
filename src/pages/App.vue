@@ -76,16 +76,20 @@ export default {
           fieldValue:'',
           fieldName:'title',
           fieldType:'text',
-          required:true
+          required:true,
+          labelWidth: 120,
+          tip:'考试的主题，是指你这次考试的主要内容'
         },
         {
-            label:'Text组件INT类型',
+            label:'Vant 数字类型',
             textFieldType:'int',
             fieldValue:'',
             fieldName:'title1',
             fieldType:'digit',
             required:true,
-            labelWidth: 120
+            labelWidth: 120,
+            tip:'Vant 是一个轻量、可定制的移动端组件库,于 2017 年开源。 目前Vant 官方提供了Vue 2 版本、Vue 3 版本和微信小程序版本,并由社区团队维护React 版本和支付宝小程序版本',
+            tipLocation:'bottom'
         },
         {
           label:'Money类型',
@@ -93,7 +97,9 @@ export default {
           fieldValue:'',
           fieldName:'money',
           fieldType:'amount',
-          required:true
+          required:true,
+          labelWidth: 120,
+          tip:'请输入具体金额，精度为两位小数，货币为人民币'
         },
         {
           label:'Number类型',
@@ -152,7 +158,8 @@ export default {
           fieldType:'date',
           fieldName: 'date',
           fieldValue: '',
-          required: true
+          required: true,
+          tip:'考试日期前往别迟到'
         },
         {
           label:'考试日期和时间',
@@ -195,6 +202,8 @@ export default {
           },
           useItemSlot:true,
           refreshWhenClick:true,//每次都刷新数据
+          tip:'远程搜索就是从网络上加载数据来选择的意思',
+          tipLocation: 'bottom'
         },
         {
           label:'收款人信息',
